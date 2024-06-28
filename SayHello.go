@@ -1,5 +1,7 @@
 package go_say_hello
 
-func SayHelloBro(value string) string {
-	return "Hello Bro" + value
+import "strconv"
+
+func SayHelloBro(value string, age int) string {
+	return "Hello Bro" + value + "You are " + strconv.Itoa(age)
 }
